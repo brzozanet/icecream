@@ -6,7 +6,7 @@ Strona internetowa dla firmy produkującej lody, zbudowana przy użyciu HTML, SA
 
 ## 🌐 Demo
 
-Zobacz stronę online: [Ice Cream Project](https://brzozanet.github.io/project-icecream/)
+Zobacz stronę online: [Ice Cream Project](https://brzozanet.github.io/icecream/)
 
 ## 🛠 Użyte technologie
 
@@ -25,7 +25,7 @@ Zobacz stronę online: [Ice Cream Project](https://brzozanet.github.io/project-i
 ## 📂 Struktura projektu
 
 ```
-project-icecream/
+icecream/
 ├── src/
 │   ├── index.html
 │   ├── index.js
@@ -78,13 +78,13 @@ Strona jest w pełni responsywna i dostosowana do następujących breakpointów:
 1. Sklonuj repozytorium
 
    ```bash
-   git clone https://github.com/brzozanet/project-icecream.git
+   git clone https://github.com/brzozanet/icecream.git
    ```
 
 2. Przejdź do katalogu projektu
 
    ```bash
-   cd project-icecream
+   cd icecream
    ```
 
 3. Zainstaluj zależności
@@ -103,7 +103,7 @@ Strona będzie dostępna pod adresem: `http://localhost:1234`
 ## 🌍 Wdrożenie
 
 Projekt jest skonfigurowany do wdrożenia na GitHub Pages. Po zbudowaniu, strona będzie dostępna pod adresem:
-`https://brzozanet.github.io/project-icecream/`
+`https://brzozanet.github.io/icecream/`
 
 ## 📝 Licencja
 
@@ -111,4 +111,4 @@ Projekt jest objęty licencją ISC.
 
 <br>
 
-![Screenshot App](https://raw.githubusercontent.com/brzozanet/project-icecream/main/src/images/gh-cover-goit-html-css.png)
+![Screenshot App](https://raw.githubusercontent.com/brzozanet/icecream/main/src/images/gh-cover-goit-html-css.png)
