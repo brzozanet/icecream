@@ -1,6 +1,4 @@
-# 🍦 Ice Cream
-
-### Projekt GoIT Fullstack Developer Course
+# 🍦 Artisanal Ice Cream Manufacturer
 
 Responsywna strona internetowa marki lodów, zbudowana z użyciem HTML, SASS i JavaScript. Projekt opiera się o podejście _Mobile First_ i został zorganizowany modułowo (sekcje strony jako partiale, osobne pliki SCSS i JS dla komponentów/interakcji). Bundling oraz serwer developerski realizowane są przez Parcel.
 
