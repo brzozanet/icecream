@@ -1,8 +1,8 @@
-# 🍦 Projekt Ice Cream
+# 🍦 Ice Cream
 
-### Projekt grupowy GoIT fullstack developer course
+### Projekt grupowy GoIT Fullstack Developer Course
 
-Strona internetowa dla firmy produkującej lody, zbudowana przy użyciu HTML, SASS i JavaScript. Strona wykonana jako SPA (_single-page-application_). Zawiera trzy główne działy: _About Us_, _How it's made?_ oraz _Our products_ oraz _Contact_. W pełni responsywny projekt powstał w oparciu o strategię _Mobile First_ w celu poprawy doświadczeń użytkownika na urządzeniach mobilnych, poprawę pozycjonowania w wynikach wyszukiwania, szybsze ładowanie stron, elastyczność i skalowalność oraz minimalizację zbędnych elementów. Zastosowanie preprocesora SASS spowodowało większą zwięzłość i czytelność kodu, możliwość wprowadzenia zmiennych oraz obsługi zagnieżdżania oraz modularność. Bundling aplikacji wykonany za pomoca Parcel, służącego do automatyzacji procesu budowania i dostarczania plików źródłowych (np. JavaScript, CSS, obrazy) do produkcji.
+Responsywna strona internetowa marki lodów, zbudowana z użyciem HTML, SASS i JavaScript. Projekt opiera się o podejście _Mobile First_ i został zorganizowany modułowo (sekcje strony jako partiale, osobne pliki SCSS i JS dla komponentów/interakcji). Bundling oraz serwer developerski realizowane są przez Parcel.
 
 ## 🌐 Demo
 
@@ -10,105 +10,97 @@ Zobacz stronę online: [Ice Cream Project](https://brzozanet.github.io/icecream/
 
 ## 🛠 Użyte technologie
 
-- **HTML5** (struktura strony)
-- **CSS3** (stylowanie z wykorzystaniem metodologii BEM)
-- **SASS** (preprocesor CSS dla lepszej organizacji stylów)
-- **Flexbox** (elastyczny układ strony)
-- **JavaScript** (interaktywność strony)
-- **Node.js** (środowisko uruchomieniowe)
-- **Parcel** (bundler)
-- **Swiper.js** (do karuzeli)
-- **PostHTML** (do includów)
-- **Figma** (projekt graficzny)
-- **Git & GitHub** (kontrola wersji i hosting)
+- **HTML5**
+- **SASS (SCSS)**
+- **JavaScript (ES Modules)**
+- **Parcel 2**
+- **PostHTML Include**
+- **Swiper.js**
+- **GitHub Pages**
 
 ## 📂 Struktura projektu
 
-```
+```text
 icecream/
 ├── src/
 │   ├── index.html
 │   ├── index.js
+│   ├── js/
+│   │   ├── mobile-menu.js
+│   │   ├── modal-buynow.js
+│   │   ├── modal-franschise.js
+│   │   └── modal-location.js
+│   ├── partials/
+│   ├── sass/
+│   │   ├── main.scss
+│   │   ├── partials/
+│   │   ├── modules/
+│   │   └── utils/
 │   ├── images/
-│   └── sass/
-│       ├── main.scss
-│       └── components/
+│   └── icons/
 ├── package.json
 └── README.md
 ```
 
-## 📱 Dostępne strony i funkcje
+## ✨ Najważniejsze funkcje
 
-- **Strona Główna** - Landing page z sekcją hero
-- **O Nas** - Informacje o firmie
-- **Jak To Jest Robione** - Opis procesu produkcji
-- **Nasze Produkty** - Katalog produktów
-- **Kontakt** - Informacje kontaktowe i formularz
-- Responsywny design dla wszystkich urządzeń
-- Interaktywna galeria
-- Karuzela z opiniami klientów
-- Formularz kontaktowy z walidacją
-- Nawigacja przyjazna urządzeniom mobilnym
+- Sekcje: hero, produkty, o nas, zalety, galeria, opinie, kontakt, stopka
+- Menu mobilne
+- Modale: `Buy now`, `Our Locations`, `Franchise`
+- Responsywny layout dla mobile/tablet/desktop
+- Komponent galerii i slider opinii (Swiper)
 
 ## 📱 Responsywność
 
-Strona jest w pełni responsywna i dostosowana do następujących breakpointów:
+- Mobile: `< 768px`
+- Tablet: `768px - 1199px`
+- Desktop: `>= 1200px`
 
-- Mobile: < 768px
-- Tablet: 768px - 1199px
-- Desktop: ≥ 1200px
-
-## 🔍 SEO i Wydajność
-
-- Zoptymalizowane obrazy
-- Semantyczny HTML
-- Szybkie ładowanie strony
-- Mobile-first approach
-- Dostępność (WCAG)
-
-## 🚀 Jak rozpocząć
+## 🚀 Uruchomienie lokalne
 
 ### Wymagania
 
-- Node.js (wersja 12 lub wyższa)
-- npm (Node Package Manager)
+- Node.js (zalecana aktualna wersja LTS)
+- npm
 
-### Uruchomienie wersji developerskiej
+### Instalacja i start
 
-1. Sklonuj repozytorium
+1. Sklonuj repozytorium:
 
-   ```bash
-   git clone https://github.com/brzozanet/icecream.git
-   ```
+```bash
+git clone https://github.com/brzozanet/icecream.git
+```
 
-2. Przejdź do katalogu projektu
+2. Przejdź do katalogu projektu:
 
-   ```bash
-   cd icecream
-   ```
+```bash
+cd icecream
+```
 
-3. Zainstaluj zależności
-   ```bash
-   npm install
-   ```
+3. Zainstaluj zależności:
 
-Aby uruchomić serwer deweloperski:
+```bash
+npm install
+```
+
+4. Uruchom tryb developerski:
 
 ```bash
 npm run dev
 ```
 
-Strona będzie dostępna pod adresem: `http://localhost:1234`
+Aplikacja będzie dostępna pod adresem: `http://localhost:1234`.
 
-## 🌍 Wdrożenie
+## 🏗 Build produkcyjny
 
-Projekt jest skonfigurowany do wdrożenia na GitHub Pages. Po zbudowaniu, strona będzie dostępna pod adresem:
-`https://brzozanet.github.io/icecream/`
+```bash
+npm run build
+```
+
+Build jest przygotowany pod publikację na GitHub Pages z `public-url` ustawionym na `/icecream/`.
 
 ## 📝 Licencja
 
 Projekt jest objęty licencją ISC.
-
-<br>
 
 ![Screenshot App](https://raw.githubusercontent.com/brzozanet/icecream/main/src/images/gh-cover-goit-html-css.png)
