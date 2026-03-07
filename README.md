@@ -1,5 +1,7 @@
 # 🍦 Artisanal Ice Cream Manufacturer
 
+![Screenshot App](https://raw.githubusercontent.com/brzozanet/icecream/main/src/images/gh-cover-goit-html-css.png)
+
 Responsywna strona internetowa marki lodów, zbudowana z użyciem HTML, SASS i JavaScript. Projekt opiera się o podejście _Mobile First_ i został zorganizowany modułowo (sekcje strony jako partiale, osobne pliki SCSS i JS dla komponentów/interakcji). Bundling oraz serwer developerski realizowane są przez Parcel.
 
 ## 🌐 Demo
@@ -100,5 +102,3 @@ Build jest przygotowany pod publikację na GitHub Pages z `public-url` ustawiony
 ## 📝 Licencja
 
 Projekt jest objęty licencją ISC.
-
-![Screenshot App](https://raw.githubusercontent.com/brzozanet/icecream/main/src/images/gh-cover-goit-html-css.png)
